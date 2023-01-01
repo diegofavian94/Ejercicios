@@ -1,0 +1,64 @@
+select {
+    width: 20%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #77C66E;
+    margin: 0.5rem
+  }
+  button {
+    width: 20%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #77C66E;
+    margin: 0.5rem
+  }
+  input {
+    width: 20%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #77C66E;
+    margin: 0.5rem
+  }
+  .container {
+      width:100%;
+      display: flex
+  }
+  
+  #contenido {
+    width:50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  #timerText {
+    width:50%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1cm;
+  }
+  video {
+    height: 100%;
+  }
+  img {
+    height: 100%;
+  }
