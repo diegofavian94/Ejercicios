@@ -3,6 +3,7 @@ var interval;
 let iniciar = false
 let indexCal = 0
 let indexEj = 0
+let indexTunel = 0
 let timerIniciado = false
 cambioDia();
 function iniciarTimer(){ 
@@ -63,11 +64,22 @@ function insertarContenido (){
                 '<h2>7.Pasitos rápidos con flexión</h2><video autoplay="" loop="" muted="" playsinline="" width="600" height="400" src="https://hmg-h-cdn.hearstapps.com/videos/fast-feet-drop-1591199264.mp4"></video>',
                 '<h2>8. Zancada lateral con rodillas arriba</h2><video autoplay="" loop="" muted="" playsinline="" width="600" height="400" src="https://hmg-h-cdn.hearstapps.com/videos/2020-womenshealth-fitnessloops-ep24-tatiana-ms-kw-v1-gradedselects-lateralhighknees-02-1583933672.mp4"></video>',
                 '<h2>9. Pasos rápidos con puños</h2><video autoplay="" loop="" muted="" playsinline="" width="600" height="400" src="https://hmg-h-cdn.hearstapps.com/videos/2020-womenshealth-fitnessloops-ep24-tatiana-ms-kw-v1-gradedselects-fastfeetwithpunches-02-1583933830.mp4"></video>',
-                '<h2>10. Abdominales de crossfit</h2><img src="https://media.giphy.com/media/ivpiAtbDZEQQVYYsIz/giphy.gif" alt="Exercice 4" />',
+                '<h2>10. Flexiones de Pared</h2><img src="https://media1.giphy.com/media/SHAh7hGU09oyXgrauE/giphy.gif" alt="Exercice 4" />',
+                '<h2>11. Abdominales de Pie</h2><img src="https://runfitners.com/wp-content/uploads/2019/10/ABDOMINALES-DE-PIE-1-min-1.gif" alt="Exercice 4" />',
+                '<h2>12. Abdominales de crossfit</h2><img src="https://media.giphy.com/media/ivpiAtbDZEQQVYYsIz/giphy.gif" alt="Exercice 4" />',
                 ]
         }
         document.querySelector('#contenido').innerHTML=contenidoEj[indexEj];
         indexEj=indexEj==contenidoEj.length-1 ? 0 : indexEj+1
+    }else if(document.querySelector('#selector option:checked').id==="tunelCarpio"){
+        const contenidoTunel=[
+            '<h2>1. Estiramiento Flexores</h2><img src="https://media3.giphy.com/media/humxpXtkc0PJsgIONE/giphy.gif" alt="Exercice 4" />',
+            '<h2>2. Amasamiento del Antebrazo</h2><img src="https://media4.giphy.com/media/viosR1bL1So0e7fPoV/giphy.gif" alt="Exercice 4" />',
+            '<h2>3. Apertura del túnel del carpo</h2><img src="https://media3.giphy.com/media/reECjVaeyg8MWynAp5/giphy.gif" alt="Exercice 4" />',
+            '<h2>4. Movilización Neural</h2><img src="https://media3.giphy.com/media/3f7XH096AtzgncUjXe/giphy.gif" alt="Exercice 4" />',
+            ]
+            document.querySelector('#contenido').innerHTML=contenidoTunel[indexTunel];
+            indexTunel=indexTunel==contenidoTunel.length-1 ? 0 : indexTunel+1
     }
     
 }
@@ -78,6 +90,7 @@ function cerrarContenido(){
     iniciar = false
     indexCal = 0
     indexEj = 0
+    indexTunel = 0
 }
 function cambioDia(){
     if(document.querySelector('#selector option:checked').id==="ejercicios"){
